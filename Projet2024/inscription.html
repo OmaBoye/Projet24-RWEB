@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   
+    <!---CSS File--->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!---------java form-->
+    <link rel="validateForm" href="Validation.js" />
+
+  </head>
+  <body>
+    <!---------- NAV --------->
+<div class="width-100 ">
+    <div class="container">
+       <div class="header-menu">
+          <div class="width-40" >
+             <ul>
+                <li><a href="Index.html">Aceuil </a></li>
+                <li><a href="#">L'universite</a></li>
+                <li><a href="#">Faculte et diplome </a></li>
+               
+             </ul>
+          </div>
+          <div class="width-20"><img src="C:\Users\omaba\OneDrive\Desktop\Layer 1 Frame.png" class="logo1"> </div>
+          <div class="width-40" >
+             <ul style="float:right;">
+                <li><a href="inscription.html">Inscription</a></li>
+                <li><a href="#">Calendrier</a></li>
+                <li><a href="Contact.html">Nos Contact</a></li>
+             </ul>
+          </div>
+       </div>
+    </div>
+ </div>
+ <!------ FIN de NAV ------->
+ <div class="main-section" >
+    <section class="contain">
+      <header>FORM D'INSCRIPTION</header>
+      <form action="traitement.php" class="form" method="get" onsubmit="return validateForm()" >
+        <div class="input-box">
+          <label>Nom</label>
+          <input type="text" placeholder="Votre Nom" name="Nom" required />
+        </div>
+        <div class="input-box">
+            <label>Matricule</label>
+            <input type="text" placeholder="Votre Matricule" name="Matricule" required />
+          </div>
+          <div class="input-box">
+            <label>Filiere</label>
+            <input type="text" placeholder="Votre Filiere" name="Filiere" required />
+          </div>
+        <div class="input-box">
+          <label>Email</label>
+          <input type="text" placeholder="Votre Email" name="Email" />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Numero</label>
+            <input type="number" placeholder="TEL:" />
+          </div>
+          <div class="input-box">
+            <label>Date de naissance</label>
+            <input type="date" placeholder="DDN"  />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>SEXE</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="SEXE" checked />
+              <label for="check-male">homme</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="SEXE" />
+              <label for="check-female">Femme</label>
+            </div>
+          
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Address</label>
+          <input type="text" placeholder="Adresse de la rue" />
+          <input type="text" placeholder="Adresse de la rue2" />
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Pais</option>
+                <option>Mauritanie</option>
+                <option>Lebanon</option>
+                <option>Senegal</option>
+                
+              </select>
+            </div>
+            <input type="text" placeholder="Ville" />
+          </div>
+         
+        </div>
+        <button>submit</button>
+      </form>
+    </section>
+      <!---------- Footer Copyright  --------->
+      <div class="footer-section">
+        
+          
+<div class="copyright"> 2020 © par l'Université libanaise internationale. Tous droits réservés</div>
+</div>
+
+
+
+</body>
+</html>
+  </body>
+</html>
